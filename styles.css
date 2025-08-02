@@ -1,0 +1,162 @@
+/* إعدادات أساسية */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(to right, #fefefe, #f9f1ff);
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* ✅ الصفحة الرئيسية - اختر الشعبة */
+.highlight-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #7b2cbf;
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #444;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.streams {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.streams button {
+  background-color: #d6b3ff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4a106a;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.streams button:hover {
+  background-color: #b27eff;
+  transform: scale(1.05);
+}
+
+/* اللغة */
+.language {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* تسجيل */
+.login {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.login-button {
+  background-color: #00c77f;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #00a366;
+}
+
+.user-icon {
+  font-size: 22px;
+}
+
+/* ✅ الصفحات الفرعية - تسيير، علوم، لغات... */
+.title .icon {
+  font-size: 35px;
+}
+
+.title h1 {
+  font-size: 40px;
+  margin: 15px 0 10px;
+  color: #5e3c8f;
+}
+
+.title p {
+  font-size: 20px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.buttons button {
+  background-color: #e0c1ff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 17px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #4a1c74;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #caa0f9;
+  transform: scale(1.05);
+}
+
+/* قسم الدعم */
+.support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.phone {
+  font-size: 24px;
+}
+
+.support-text {
+  background-color: #ff3860;
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  transform: rotate(-4deg);
+}
